@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://wt240kocqbbi"
+path="res://.godot/imported/Vn Work Loop B.wav-d9bf3e5db5956c254b8b6b004968edfe.sample"
+
+[deps]
+
+source_file="res://assets/Audio/Music/Vn Work Loop B.wav"
+dest_files=["res://.godot/imported/Vn Work Loop B.wav-d9bf3e5db5956c254b8b6b004968edfe.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

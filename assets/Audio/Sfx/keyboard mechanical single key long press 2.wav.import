@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d4c0a1783kaoc"
+path="res://.godot/imported/keyboard mechanical single key long press 2.wav-729862e924b9ac21ba66b97384792ddb.sample"
+
+[deps]
+
+source_file="res://assets/Audio/Sfx/keyboard mechanical single key long press 2.wav"
+dest_files=["res://.godot/imported/keyboard mechanical single key long press 2.wav-729862e924b9ac21ba66b97384792ddb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

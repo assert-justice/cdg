@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dfwlnjcps3s75"
+path="res://.godot/imported/sit down on squeaky couch 3.wav-a6b1b41d1a70d64c21268728277aa318.sample"
+
+[deps]
+
+source_file="res://assets/Audio/Sfx/sit down on squeaky couch 3.wav"
+dest_files=["res://.godot/imported/sit down on squeaky couch 3.wav-a6b1b41d1a70d64c21268728277aa318.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

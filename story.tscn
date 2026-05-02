@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://cvnlrdehd5fp5"]
+
+[ext_resource type="Script" uid="uid://dhbunrvuh6xvc" path="res://scripts/story/story.gd" id="1_76aiv"]
+[ext_resource type="PackedScene" uid="uid://dqvuhudbl0bdh" path="res://tod.tscn" id="2_27gb3"]
+[ext_resource type="Texture2D" uid="uid://clhilajntl2t7" path="res://assets/Backgrounds/Store_Main.png" id="2_xfuvt"]
+[ext_resource type="Texture2D" uid="uid://1e1568rxxap5" path="res://assets/Characters/Lucy/anxious-work.png" id="3_onxn5"]
+[ext_resource type="Texture2D" uid="uid://celwpqtwdxqri" path="res://assets/Ui/ActPanelDay.png" id="5_xt3l3"]
+[ext_resource type="Texture2D" uid="uid://cyrt8ewyuewe1" path="res://assets/Ui/Act1Day.png" id="6_0rvij"]
+[ext_resource type="Texture2D" uid="uid://1acs08jcotf" path="res://assets/Ui/TextBoxDay.png" id="7_obepi"]
+[ext_resource type="Texture2D" uid="uid://ywu5pkemb0l0" path="res://assets/Ui/ContinueArrow.png" id="8_rvs4j"]
+[ext_resource type="FontFile" uid="uid://bi6s87w085h1b" path="res://assets/Ui/Font Files/BabelSans.ttf" id="9_30j8w"]
+[ext_resource type="Texture2D" uid="uid://d1x54t7ldoqxx" path="res://assets/Ui/SpeakerLucy.png" id="10_8w0im"]
+
+[node name="Story" type="Control" unique_id=645571850]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_76aiv")
+
+[node name="Canvas" type="Control" parent="." unique_id=102583906]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StoreMain" type="Sprite2D" parent="Canvas" unique_id=659821339]
+position = Vector2(960, 540)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_xfuvt")
+
+[node name="AnxiousWork" type="Sprite2D" parent="Canvas" unique_id=1690326545]
+visible = false
+position = Vector2(660, 562)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("3_onxn5")
+
+[node name="Ui" type="Control" parent="." unique_id=2012264625]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Tod" parent="Ui" unique_id=1297158588 instance=ExtResource("2_27gb3")]
+position = Vector2(162, 135)
+
+[node name="ActPanel" type="Sprite2D" parent="Ui" unique_id=710555424]
+position = Vector2(233, 67)
+texture = ExtResource("5_xt3l3")
+
+[node name="Act" type="Sprite2D" parent="Ui" unique_id=898106516]
+position = Vector2(217, 67)
+texture = ExtResource("6_0rvij")
+
+[node name="TextBox" type="Sprite2D" parent="Ui" unique_id=266047122]
+position = Vector2(960, 850)
+texture = ExtResource("7_obepi")
+metadata/_edit_lock_ = true
+
+[node name="Dialogue" type="RichTextLabel" parent="Ui" unique_id=1736626077]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 823.0
+offset_right = 1549.0
+offset_bottom = 1027.0
+theme_override_fonts/normal_font = ExtResource("9_30j8w")
+theme_override_font_sizes/normal_font_size = 58
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+[node name="Speaker" type="Sprite2D" parent="Ui" unique_id=490492321]
+position = Vector2(497.00006, 734)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("10_8w0im")
+
+[node name="Continue" type="TextureButton" parent="Ui" unique_id=780290571]
+layout_mode = 0
+offset_left = 1625.0
+offset_top = 938.0
+offset_right = 1702.0
+offset_bottom = 1015.0
+texture_normal = ExtResource("8_rvs4j")
+
+[node name="SpeakerFallback" type="RichTextLabel" parent="Ui" unique_id=1338672341]
+visible = false
+layout_mode = 0
+offset_left = 383.0
+offset_top = 646.0
+offset_right = 879.0
+offset_bottom = 824.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("9_30j8w")
+theme_override_font_sizes/normal_font_size = 150
+text = "Narrator"

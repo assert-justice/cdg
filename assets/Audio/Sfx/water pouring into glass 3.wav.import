@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ff0ipognj2ds"
+path="res://.godot/imported/water pouring into glass 3.wav-e31a1e91d1ec8745e45cf0a59ae4fdf0.sample"
+
+[deps]
+
+source_file="res://assets/Audio/Sfx/water pouring into glass 3.wav"
+dest_files=["res://.godot/imported/water pouring into glass 3.wav-e31a1e91d1ec8745e45cf0a59ae4fdf0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

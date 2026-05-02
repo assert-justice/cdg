@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dqvuhudbl0bdh"]
+
+[ext_resource type="Script" uid="uid://jd4yx2kgahk6" path="res://scripts/tod.gd" id="1_4nmn4"]
+[ext_resource type="Texture2D" uid="uid://cptv1hsw7mogk" path="res://assets/Ui/Sun.png" id="1_ep6ia"]
+[ext_resource type="Texture2D" uid="uid://rjcilhlh6xbb" path="res://assets/Ui/Moon.png" id="2_4nmn4"]
+[ext_resource type="Texture2D" uid="uid://bnif1ikig3c20" path="res://assets/Ui/SunShine.png" id="3_kwprj"]
+[ext_resource type="Texture2D" uid="uid://d32wnio8tu3eq" path="res://assets/Ui/MoonShine.png" id="4_oxhto"]
+
+[node name="Tod" type="Node2D" unique_id=1297158588]
+script = ExtResource("1_4nmn4")
+
+[node name="Sun" type="Sprite2D" parent="." unique_id=928697455]
+texture = ExtResource("1_ep6ia")
+
+[node name="Moon" type="Sprite2D" parent="." unique_id=1185799501]
+texture = ExtResource("2_4nmn4")
+
+[node name="Sunshine" type="Sprite2D" parent="." unique_id=1933726240]
+texture = ExtResource("3_kwprj")
+
+[node name="Moonshine" type="Sprite2D" parent="." unique_id=1940413142]
+texture = ExtResource("4_oxhto")

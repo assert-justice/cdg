@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dytdd4rmlafh6"
+path="res://.godot/imported/ambience - dripping water 2.wav-4a38b235a2fe2d749c5886932cae0377.sample"
+
+[deps]
+
+source_file="res://assets/Audio/Sfx/ambience - dripping water 2.wav"
+dest_files=["res://.godot/imported/ambience - dripping water 2.wav-4a38b235a2fe2d749c5886932cae0377.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
