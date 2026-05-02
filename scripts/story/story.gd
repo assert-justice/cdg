@@ -39,13 +39,12 @@ func _cycle():
 
 func _continue():
 	if _tween is Tween and _tween.is_running():
-		# note: we are skipping to the end of the tween
+		# note: we are skipping to the end of the tween and otherwise cancelling the continue
 		_tween.pause()
 		_tween.custom_step(1000000)
-	if in_story():
+	elif in_story():
 		_running = true
 	else:
-		print("fin")
 		_restart()
 		Global.add_message("set_menu: Credits")
 
@@ -220,8 +219,9 @@ func _set_image(command: Command, spr: Sprite2D):
 			"alpha":
 				if _anim_time > 0:
 					# note: this little runabout is needed to not cause errors when tweens are skipped
-					var n := spr.name
-					_get_tween().tween_method(func(a:float): if n in _images: _images[n].modulate.a = a, spr.modulate.a, command.number(), _anim_time)
+					_get_tween().tween_property(spr, "modulate:a", command.number(), _anim_time)
+					#var n := spr.name
+					#_get_tween().tween_method(func(a:float): if n in _images: _images[n].modulate.a = a, spr.modulate.a, command.number(), _anim_time)
 				else:
 					spr.modulate.a = command.number()
 			_:
