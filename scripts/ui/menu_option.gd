@@ -12,5 +12,9 @@ func change_setting(value: Variant):
 	Global.set_setting(setting_name, value)
 
 func vis_changed():
+	# todo: this is another bad hack
 	if visible:
-		load_setting()
+		if setting_name == "fullscreen" and OS.has_feature("web"):
+			visible = false
+		else:
+			load_setting()
